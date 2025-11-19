@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/images/inggas_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js"></script>
+    <title>Ingga's Kitchenette</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="container">
+            <div class="left">
+            <a class="home" href="#"><h1><img src="./assets/images/inggas_logo.png" alt="inggas_logo" height="55"> Ingga's Kitchenette</h1></a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="right" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="feedback.html" target="_self">Feedback</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+      <section class="hero-image">
+          <div class="hero-text">
+              <h1>“Delight, Savor, Celebrate”</h1> <!-- Hero Section -->
+              <p>Exceptional food, personalized service, unforgettable memories.</p>
+              <div class="hero-button">
+                <button class="order-now-btn">
+                  <a href="#">Order Now</a>
+                </button>
+                  <a href="#services" class="view-services-btn">View Our Services <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+          </div>
+      </section>
+
+      <h1 class="services-header autoShow" id="services">Our Services</h1>
+      <section class="services-container autoShow">
+        <div class="services-card">
+          <img src="./assets/images/catering_service.png" alt="Catering Service">
+          <h2>Catering Services</h2>
+          <p>We have a variety of catering services for specific events and occasions to cater your needs!</p>
+          <button class="services-btn" onclick="window.location.href='catering.html'">See More</button>
+        </div>
+        <div class="services-card">
+          <img src="./assets/images/food_pack.png" alt="Event Planning">
+          <h2>Food Packs</h2>
+          <p>We offer various kinds of food packs such as rice meals!</p>
+          <button class="services-btn">See More</button>
+        </div>
+        <div class="services-card">
+          <img src="./assets/images/Image_6.jpg" alt="Custom Menus">
+          <h2>Party Trays</h2>
+          <p>We offer many different cuisines & dishes that customers can request to their needs!</p>
+          <button class="services-btn">See More</button>
+        </div>
+        <div class="services-card">
+          <img src="./assets/images/special_events.png" alt="Custom Menus">
+          <h2>Special Events</h2>
+          <p>We offer Special Events hosting alongside food catering for events such as wedding parties!</p>
+          <button class="services-btn">See More</button>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="carousel-header">Welcome to Ingga's Kitchenette!</h1>
+        <div class="carousel-section autoShow">
+          <div class="carousel-group">
+            <div class="card"><img src="./assets/images/Image_1.jpg"></div>
+            <div class="card"><img src="./assets/images/Image_2.jpg"></div>
+            <div class="card"><img src="./assets/images/Image_3.png"></div>
+            <div class="card"><img src="./assets/images/Image_4.jpg"></div>
+            <div class="card"><img src="./assets/images/Image_5.jpg"></div>
+            <div class="card"><img src="./assets/images/Image_6.jpg"></div> 
+          </div>
+        </div>
+      </section>
+
+      <h1 class="about-us-header">What is Ingga's Kitchenette?</h1>
+      <section class="about-us autoShow" id="aboutus">
+        <div class="about-us-image">
+          <img src="./assets/images/inggas_logo.png" height="500px">
+        </div>
+        <div class="about-us-text">
+          <p class="abt-text">Ingga’s Kitchenette is a catering service provider wherein customers can inquire catering services for their needs, particularly food and beverage.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="aboutus-sect">
+          <h2>About Us</h2>
+          <p>Ingga’s Kitchenette is a catering service provider wherein customers can inquire catering services for their needs, particularly food and beverage.</p>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+        <div class="contacts-sect">
+          <h2>Contact Us</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa-solid fa-phone"></i><a href="#">0916 418 7215</a></span>
+              <span><i class="fa-solid fa-envelope"></i><a href="#">inggaskitchenette@gmail.com</a></span>
+              <span><i class="fa-solid fa-location-dot"></i><p class="address">HXGV+PFQ, Angel Linao Street, Paco Manila, Paco, Manila, Metro Manila</p></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright-text">
+      <p>&copy; 2025 Ingga's Kitchenette. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
