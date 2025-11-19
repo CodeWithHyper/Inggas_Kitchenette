@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/images/inggas_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Inggas Kitchenette</title>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="left">
+          <a class="home" href="#"><h1><img src="./assets/images/inggas_logo.png" alt="inggas_logo" height="55"> Ingga's Kitchenette</h1></a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="right" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="#aboutus">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#" target="_self">Feedback</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-image-feedback">
+        <h1 class="hero-img-fb-header">Show us some love by giving us feedback!</h1>
+      </section>
+      <section class="feedback">
+       <div class="feedback-section">
+          <div class="userInfo">
+               <label for="userName">Name:</label>
+               <input type="text" name="userName" id="userName" autocomplete="off" required><br>
+               <label for="userEmail">Email:</label>
+               <input type="email" name="userEmail" id="userEmail" placeholder="email@gmail.com" autocomplete="off" required><br>
+               <label for="userNum">Phone Number:</label>
+               <input type="tel" name="userNum" id="userNum" pattern="[0-9]{11}" placeholder="09XXXXXXXXX" autocomplete="off" required>
+          </div>
+          <div class="starW">
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+               <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+          <form action="#">
+            <header></header>
+            <div class="textbox">
+              <textarea cols="30" id="feedbackText"placeholder="How was your experience with us..." required></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+       </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+                <div class="aboutus-sect">
+                <h2>About Us</h2>
+                <p>Ingga’s Kitchenette is a catering service provider wherein customers can inquire catering services for their needs, particularly food and beverage.</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                </div>
+                <div class="contacts-sect">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                    <span><i class="fa-solid fa-phone"></i><a href="#">0916 418 7215</a></span>
+                    <span></span>
+                    <span><i class="fa-solid fa-envelope"></i><a href="#">inggaskitchenette@gmail.com</a></span>
+                    <span></span>
+                    <span><i class="fa-solid fa-location-dot"></i><p class="address">HXGV+PFQ, Angel Linao Street, Paco Manila, Paco, Manila, Metro Manila</p></span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-text">
+            <p>&copy; 2025 Ingga's Kitchenette. All Rights Reserved.</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>

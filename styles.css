@@ -184,7 +184,7 @@ main {
 }
 
 .hero-image-catering{
-    background-image: url("./images/hero.jpg");
+    background-image: url("./assets/images/hero.jpg");
 }
 
 .hero-img-fb-header{
@@ -487,6 +487,203 @@ footer + div {
 .copyright-text p:hover {
     color: #fff;
     transition: color 0.3s ease;
+}
+
+/*Contact Us Catering Form Section*/
+.catering-form-section {
+  background: #f4f6fc;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.catering-form-container {
+  background: white;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.catering-form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3em;
+  color: #d51500;
+}
+
+.catering-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.catering-form .form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.catering-form .form-group input,
+.catering-form .form-group select,
+.catering-form .form-group textarea, 
+.catering-form .form-group option{
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.catering-form .form-group input:focus,
+.catering-form .form-group select:focus,
+.catering-form .form-group textarea:focus {
+  border-color: #d51500;
+  box-shadow: 0 0 8px rgba(30,58,138,0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  background: #d51500;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: black;
+}
+
+
+/*Feedback Section*/
+.feedback {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f4f6fc;
+}
+
+.feedback-section {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.feedback-section .starW {
+  display: flex;               
+  justify-content: center;  
+  flex-direction: row-reverse; 
+}
+
+.feedback-section .starW input{
+ display: none;
+ justify-content:center;
+}
+
+.starW label{
+  font-size: 40px;
+  color:  darkgrey;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: yellow;
+}
+
+
+input:checked ~label{
+  color:yellow;
+}
+
+input#rate-5:checked ~ label{
+ color: rgb(248, 248, 99);
+ text-shadow: 0 0 20px red;
+}
+
+#rate-1:checked ~ form header::before {
+  content: "It was the worst catering";
+}
+#rate-2:checked ~ form header::before {
+  content: "It was nice";
+}
+#rate-3:checked ~ form header::before {
+  content: "It was good";
+}
+#rate-4:checked ~ form header::before {
+  content: "It was great";
+}
+#rate-5:checked ~ form header::before {
+  content: "It was a bombaclat experience";
+}
+
+
+form header{
+  width:100%;
+  font-size: 25px;
+  color: darkblue;
+  margin:5px 0 20px 0;
+  font-weight:500;
+  text-align:center;
+  transition: all 0.2s ease;
+}
+
+ 
+form .textbox{
+  height:100%;
+  width:100%;
+  overflow:hidden;
+}
+
+form .textbox textarea{
+  height:100% auto;
+  width: 100% auto;
+  outline:none;
+  padding: 40px;
+  font-size: 16px;
+}
+
+form .btn{
+height: 25% auto;
+width:100% auto;
+margin: 15px 0;
+}
+
+form .btn button{
+  height: 100%;
+  width:25%;
+  border: 1px solid #444;
+  color:white;
+  outline: none;
+  background: darkblue;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform:uppercase;
+  cursor:pointer;
+ transition: all 0.3 ease;
+ padding: 10px 10px;
+}
+
+form .btn button:hover{
+  background:black;
 }
 
 @media (max-width: 768px) {

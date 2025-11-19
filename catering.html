@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./assets/images/inggas_logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="script.js"></script>
+        <title>Inggas Kitchenette</title>
+    </head>
+    <body>
+        <nav class="navbar">
+        <div class="container">
+            <div class="left">
+            <a class="home" href="#"><h1><img src="./assets/images/inggas_logo.png" alt="inggas_logo" height="55"> Ingga's Kitchenette</h1></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="right" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="feedback.html" target="_self">Feedback</a>
+            </div>
+        </div>
+        </nav>
+        <main>
+            <section class="hero-image-catering">
+                <h1 class="hero-img-fb-header">Show us some love by giving us feedback!</h1>
+            </section>
+            <h1 class="contact-us-header">Where is Ingga's Kitchenette?</h1>
+            <section class="contact-us autoShow" id="contactus">
+                <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5012.768195797848!2d120.9911451760593!3d14.576831077656141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c93d939765d5%3A0x7ff72869a969bb17!2sIngga%E2%80%99s%20Kitchenette!5e1!3m2!1sen!2sph!4v1763218099339!5m2!1sen!2sph" 
+                    width="700" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contact-text">
+                    <h1 class="contact-text-h1">📍 We are located at:</h1>
+                    <p class="contact-text">HXGV+PFQ, Angel Linao Street, Paco Manila, Paco, Manila, Metro Manila</p>
+                    <p class="contact-text">Contact No.: 0916-418-7215</p>
+                    <p class="contact-text">Email: inggaskitchenette@gmail.com</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+                <div class="footer-container">
+                <div class="aboutus-sect">
+                <h2>About Us</h2>
+                <p>Lorem Ipsum</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                </div>
+                <div class="contacts-sect">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                    <span><i class="fa-solid fa-phone"></i><a href="#">0916 418 7215</a></span>
+                    <span></span>
+                    <span><i class="fa-solid fa-envelope"></i><a href="#">inggaskitchenette@gmail.com</a></span>
+                    <span></span>
+                    <span><i class="fa-solid fa-location-dot"></i><p class="address">HXGV+PFQ, Angel Linao Street, Paco Manila, Paco, Manila, Metro Manila</p></span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-text">
+            <p>&copy; 2025 Ingga's Kitchenette. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
