@@ -37,20 +37,20 @@
 
           <div class="right" id="navLinks">
             <a href="#">Home</a>
-            <a href="#services">Services</a>
             <a href="#aboutus">About Us</a>
+            <a href="#services-section">Services</a>
+            <a href="#testimonials">Reviews</a>
             <a href="#contact-form">Contact Us</a>
-            <a href="feedback.html" target="_self">Feedback</a>
             <a href="#contact-form" class="nav-order-btn">Order Now</a>
           </div>
         </div>
       </nav>
     </header>
     <main>
+      <!-- HERO SECTION -->
       <section class="hero-image">
         <div class="hero-text">
           <h1>“Delight, Savor, Celebrate”</h1>
-          <!-- Hero Section -->
           <p>Exceptional food, personalized service, unforgettable memories.</p>
           <div class="hero-button">
             <button class="order-now-btn">
@@ -63,83 +63,303 @@
         </div>
       </section>
 
-      <div class="section-header autoShow" id="services">
-        <h2>Our Services</h2>
-        <p>Tailored catering solutions to make your event memorable</p>
-      </div>
-      <section class="services-container autoShow">
-        <div class="services-card">
-          <img
-            src="./assets/images/catering_service.png"
-            alt="Catering Service"
-          />
-          <h2>Catering Services</h2>
-          <p>
-            We have a variety of catering services for specific events and
-            occasions to cater your needs!
-          </p>
-          <button
-            class="services-btn"
-            onclick="window.location.href='catering.html'"
-          >
-            See More
-          </button>
-        </div>
-        <div class="services-card">
-          <img src="./assets/images/food_pack.png" alt="Event Planning" />
-          <h2>Food Packs</h2>
-          <p>We offer various kinds of food packs such as rice meals!</p>
-          <button class="services-btn">See More</button>
-        </div>
-        <div class="services-card">
-          <img src="./assets/images/Image_6.jpg" alt="Custom Menus" />
-          <h2>Party Trays</h2>
-          <p>
-            We offer many different cuisines & dishes that customers can request
-            to their needs!
-          </p>
-          <button class="services-btn">See More</button>
-        </div>
-        <div class="services-card">
-          <img src="./assets/images/special_events.png" alt="Custom Menus" />
-          <h2>Special Events</h2>
-          <p>
-            We offer Special Events hosting alongside food catering for events
-            such as wedding parties!
-          </p>
-          <button class="services-btn">See More</button>
-        </div>
-      </section>
-
-      <section>
-        <h1 class="carousel-header">Welcome to Ingga's Kitchenette!</h1>
-        <div class="carousel-section autoShow">
-          <div class="carousel-group">
-            <div class="card"><img src="./assets/images/Image_1.jpg" /></div>
-            <div class="card"><img src="./assets/images/Image_2.jpg" /></div>
-            <div class="card"><img src="./assets/images/Image_3.png" /></div>
-            <div class="card"><img src="./assets/images/Image_4.jpg" /></div>
-            <div class="card"><img src="./assets/images/Image_5.jpg" /></div>
-            <div class="card"><img src="./assets/images/Image_6.jpg" /></div>
+      <!-- ABOUT US SECTION -->
+      <section id="aboutus" class="autoShow">
+        <div class="about-container">
+          <div class="about-image">
+            <div class="slideshow-container">
+              <img
+                src="./assets/images/Image_1.jpg"
+                class="slide active"
+                alt="Cooking 1"
+              />
+              <img
+                src="./assets/images/Image_2.jpg"
+                class="slide"
+                alt="Cooking 2"
+              />
+              <img
+                src="./assets/images/Image_3.png"
+                class="slide"
+                alt="Cooking 3"
+              />
+              <img
+                src="./assets/images/Image_4.jpg"
+                class="slide"
+                alt="Cooking 4"
+              />
+              <img
+                src="./assets/images/Image_5.jpg"
+                class="slide"
+                alt="Cooking 5"
+              />
+              <img
+                src="./assets/images/Image_6.jpg"
+                class="slide"
+                alt="Cooking 6"
+              />
+            </div>
+          </div>
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              Ingga’s Kitchenette is a premier catering service provider
+              dedicated to bringing people together through the love of food.
+              Founded with a passion for authentic cuisine, we specialize in
+              creating memorable dining experiences for weddings, corporate
+              events, and family gatherings.
+            </p>
+            <p>
+              Our team takes pride in sourcing fresh, local ingredients to craft
+              dishes that not only taste amazing but also warm the heart.
+              Whether you need food packs for a meeting or a full buffet setup
+              for your big day, we are here to serve you with excellence.
+            </p>
           </div>
         </div>
       </section>
 
-      <h1 class="about-us-header">What is Ingga's Kitchenette?</h1>
-      <section class="about-us autoShow" id="aboutus">
-        <div class="about-us-image">
-          <img src="./assets/images/inggas_logo.png" height="500px" />
+      <!-- SERVICES SECTION -->
+      <section id="services-section">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>Tailored catering solutions to make your event memorable</p>
         </div>
-        <div class="about-us-text">
-          <p class="abt-text">
-            Ingga’s Kitchenette is a catering service provider wherein customers
-            can inquire catering services for their needs, particularly food and
-            beverage.
-          </p>
+
+        <div class="services-container">
+          <!-- Card 1 -->
+          <div
+            class="services-card"
+            onclick="selectService('catering_service')"
+          >
+            <img
+              src="./assets/images/catering_service.png"
+              alt="Catering Service"
+            />
+            <div class="service-content">
+              <h2>Catering Services</h2>
+              <p>
+                We have a variety of catering services for specific events and
+                occasions to cater your needs!
+              </p>
+              <div class="action-hint">
+                <span>Book this Service</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#d51500"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="services-card" onclick="selectService('food_packs')">
+            <img src="./assets/images/food_pack.png" alt="Food Packs" />
+            <div class="service-content">
+              <h2>Food Packs</h2>
+              <p>We offer various kinds of food packs such as rice meals!</p>
+              <div class="action-hint">
+                <span>Book this Service</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#d51500"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="services-card" onclick="selectService('party_trays')">
+            <img src="./assets/images/Image_6.jpg" alt="Party Trays" />
+            <div class="service-content">
+              <h2>Party Trays</h2>
+              <p>
+                We offer many different cuisines & dishes that customers can
+                request to their needs!
+              </p>
+              <div class="action-hint">
+                <span>Book this Service</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#d51500"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="services-card" onclick="selectService('special_events')">
+            <img
+              src="./assets/images/special_events.png"
+              alt="Special Events"
+            />
+            <div class="service-content">
+              <h2>Special Events</h2>
+              <p>
+                We offer Special Events hosting alongside food catering for
+                events such as wedding parties!
+              </p>
+              <div class="action-hint">
+                <span>Book this Service</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#d51500"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="catering-form-section" id="contact-form">
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <div class="section-header">
+          <h2>Client Reviews</h2>
+          <p>See what others are saying about us on Facebook.</p>
+          <div class="review-btn-container">
+            <button class="write-review-btn" onclick="openReviewModal()">
+              Write a Review
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonial-grid" id="reviews-container">
+          <div class="testimonial-card">
+            <div class="review-header">
+              <div class="review-user">
+                <div class="user-avatar">MA</div>
+                <div class="user-info">
+                  <h4>Mary Anne Daquiz Pollicar</h4>
+                  <span>via Facebook</span>
+                </div>
+              </div>
+              <i class="fa-brands fa-facebook fb-icon"></i>
+            </div>
+            <div class="review-image-container">
+              <img
+                src="./assets/images/Reviews/review1.png"
+                alt="Review Screenshot 1"
+              />
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="review-header">
+              <div class="review-user">
+                <div class="user-avatar">LV</div>
+                <div class="user-info">
+                  <h4>Lucie Villaflor Francisco</h4>
+                  <span>via Facebook</span>
+                </div>
+              </div>
+              <i class="fa-brands fa-facebook fb-icon"></i>
+            </div>
+            <div class="review-image-container">
+              <img
+                src="./assets/images/Reviews/review2.png"
+                alt="Review Screenshot 2"
+              />
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="review-header">
+              <div class="review-user">
+                <div class="user-avatar">FP</div>
+                <div class="user-info">
+                  <h4>Flordelyn Pascual</h4>
+                  <span>via Facebook</span>
+                </div>
+              </div>
+              <i class="fa-brands fa-facebook fb-icon"></i>
+            </div>
+            <div class="review-image-container">
+              <img
+                src="./assets/images/Reviews/review3.png"
+                alt="Review Screenshot 3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="reviewModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeReviewModal()">&times;</span>
+          <h2>Write a Review</h2>
+          <form id="reviewForm" onsubmit="submitReview(event)">
+            <div class="review-form-group">
+              <label for="reviewName">Your Name</label>
+              <input
+                type="text"
+                id="reviewName"
+                required
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="review-form-group">
+              <label for="reviewRating">Rating</label>
+              <select id="reviewRating" required>
+                <option value="5">★★★★★ (5 Stars)</option>
+                <option value="4">★★★★ (4 Stars)</option>
+                <option value="3">★★★ (3 Stars)</option>
+                <option value="2">★★ (2 Stars)</option>
+                <option value="1">★ (1 Star)</option>
+              </select>
+            </div>
+            <div class="review-form-group">
+              <label for="reviewText">Your Experience</label>
+              <textarea
+                id="reviewText"
+                rows="4"
+                required
+                placeholder="Tell us about the food..."
+              ></textarea>
+            </div>
+            <button type="submit" class="modal-submit-btn">Post Review</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM SECTION -->
+      <section class="catering-form-section autoShow" id="contact-form">
         <div class="section-header">
           <h2>Get in Touch</h2>
           <p>
@@ -332,6 +552,7 @@
       </section>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer>
       <div class="footer-container">
         <!-- Col 1: Brand & Socials -->
