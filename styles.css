@@ -194,7 +194,7 @@ header {
 
 /* Hero Section */
 .hero-image {
-  background-image: url("./assets/images/herobg.jpg");
+  background: linear-gradient(rgba(0,0,0,0.3)), url("./assets/images/herobg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,6 +265,7 @@ header {
 }
 
 .view-services-btn {
+  background-color: transparent;
   color: #fff;
   font-size: 1.1em;
   margin-left: 1.2em;
@@ -278,7 +279,7 @@ header {
 }
 
 .view-services-btn:hover {
-  color: #d51500;
+  color: #d51500;      
 }
 
 .view-services-btn:hover i {
@@ -345,13 +346,30 @@ header {
   margin-bottom: 15px;
 }
 
-.hero-img-fb-header {
-  text-align: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 3em;
-}
+@media (max-width: 768px) {
+            #aboutus {
+                padding: 3em 1em;
+            }
+            .about-container {
+                flex-direction: column; 
+                gap: 30px;
+            }
+            .about-image {
+                flex: none;
+                width: 100%;
+                min-width: auto;
+                height: 300px; 
+            }
+            .about-text {
+                text-align: center;
+                min-width: auto;
+            }
+            .about-text h2 {
+                font-size: 2rem;
+            }
+        }
 
+/* Section Headers */
 .section-header {
   text-align: center;
   margin: 0 auto 40px auto;
@@ -472,10 +490,59 @@ header {
   gap: 10px;
 }
 
+#gallery {
+            padding: 4em 1em;
+            background-color: #FDF7E4;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 250px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
 /* --- TESTIMONIALS --- */
 #testimonials {
   padding: 4em 1em;
-  background: #FDF7E4;
+  background: #FAEED1;
   text-align: center;
   scroll-margin-top: 3.5em;
 }
@@ -606,7 +673,7 @@ header {
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #FDF7E4;
   margin: 10% auto;
   padding: 30px;
   border-radius: 15px;
@@ -660,6 +727,7 @@ header {
 }
 
 .review-form-group input,
+.review-form-group option,
 .review-form-group textarea,
 .review-form-group select {
   display: block;
@@ -705,7 +773,7 @@ header {
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-color: #FAEED1;
+  background-color: #FDF7E4;
 }
 
 .main-wrapper {
@@ -1073,17 +1141,6 @@ footer {
 
   .footer-col {
     flex: 1 1 45%;
-  }
-
-  .aboutus-sect {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .aboutus-sect p {
-    width: 50%;
   }
 
   .contacts-sect ul.info li {
