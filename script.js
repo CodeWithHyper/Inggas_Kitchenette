@@ -9,28 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /* --- 2. Smart Navbar Logic --- */
-  const navbar = document.getElementById("navbar");
-  let lastScrollTop = 0;
-
-  if (navbar) {
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      scrollTop = Math.max(scrollTop, 0);
-
-      if (scrollTop > lastScrollTop) {
-        // Scrolling DOWN - Hide Navbar
-        navbar.style.top = "-90px";
-      } else {
-        // Scrolling UP - Show Navbar
-        navbar.style.top = "0";
-      }
-      lastScrollTop = scrollTop;
-    });
-  }
-
-  /* --- 3. Active Link Logic for Navbar --- */
+  /* --- 2. Active Link Logic for Navbar --- */
   const navItems = document.querySelectorAll(".right a:not(.nav-order-btn)");
 
   navItems.forEach((link) => {
