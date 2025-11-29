@@ -91,55 +91,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* --- SMART BOOKING LOGIC --- */
   window.selectService = function (serviceValue) {
-    // 1. Smooth scroll to form
     const formSection = document.getElementById("contact-form");
     formSection.scrollIntoView({ behavior: "smooth" });
 
-    // 2. Select the option in dropdown
     const serviceSelect = document.getElementById("service");
     serviceSelect.value = serviceValue;
 
-    // 3. Optional: Trigger a visual "flash" to show it's selected
     serviceSelect.style.borderColor = "#d51500";
     setTimeout(() => {
-      serviceSelect.style.borderColor = "#ccc"; // Reset after 1s
+      serviceSelect.style.borderColor = "#ccc"; 
     }, 1000);
   };
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const captionText = document.getElementById("caption");
+  const galleryImages = document.querySelectorAll(".gallery-item img");
+
+  galleryImages.forEach((img) => {
+    img.addEventListener("click", function () {
+      lightbox.style.display = "block";
+      lightboxImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    });
+  });
+
+  document.querySelector(".close-lightbox").addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) lightbox.style.display = "none";
+  });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const form = document.querySelector(".feedback-section form");
-//   const name = document.getElementById("userName");
-//   const email = document.getElementById("userEmail");
-//   const phoneNum = document.getElementById("userNum");
-//   const starRate = document.getElementsByName("rate");
-//   const feedback = document.getElementById("feedbackText");
-
-//   if (!form) {
-//     console.error("The form was not found!");
-//     return;
-//   }
-
-//   if (form) {
-//     form.addEventListener("submit", function (e) {
-//       e.preventDefault();
-
-//       let rating = null;
-//       for (let star of starRate) {
-//         if (star.checked) {
-//           rating = star.id.replace("rate-", "");
-//           break;
-//         }
-//       }
-//       console.log("Name: ", name.value);
-//       console.log("Email :", email.value);
-//       console.log("Phone Number: ", phoneNum.value);
-//       console.log("Rating: ", rating + "/5");
-//       console.log("Feedback: ", feedback.value);
-
-//       alert("Thank you for your feedback, we appreciate it!");
-
-//       form.reset();
-//     });
-//   }
-// });
