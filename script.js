@@ -9,15 +9,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /* --- 2. Active Link Logic for Navbar --- */
+  /* --- 2. Active Link Logic --- */
   const navItems = document.querySelectorAll(".right a:not(.nav-order-btn)");
+  const sections = document.querySelectorAll("section");
 
-  navItems.forEach((link) => {
-    link.addEventListener("click", function () {
-      navItems.forEach((nav) => nav.classList.remove("active-link"));
-      this.classList.add("active-link");
+  function activeLinkScrollSpy() {
+    let currentSectionId = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop - 150) {
+        currentSectionId = section.getAttribute("id");
+
+        if (!currentSectionId && section.classList.contains("hero-image")) {
+          currentSectionId = "home";
+        }
+      }
     });
-  });
+
+    navItems.forEach((link) => {
+      link.classList.remove("active-link");
+      const href = link.getAttribute("href");
+
+      if (currentSectionId === "home" && href === "#") {
+        link.classList.add("active-link");
+      } else if (currentSectionId && href === `#${currentSectionId}`) {
+        link.classList.add("active-link");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activeLinkScrollSpy);
+  activeLinkScrollSpy();
 
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
@@ -39,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("reviewModal").style.display = "none";
   };
 
-  // Close modal if clicked outside (Using event listener instead of assignment)
   window.addEventListener("click", function (event) {
     const modal = document.getElementById("reviewModal");
     if (event.target == modal) {
@@ -99,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     serviceSelect.style.borderColor = "#d51500";
     setTimeout(() => {
-      serviceSelect.style.borderColor = "#ccc"; 
+      serviceSelect.style.borderColor = "#ccc";
     }, 1000);
   };
 
