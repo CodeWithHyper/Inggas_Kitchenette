@@ -197,7 +197,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90dvh;
+  height: 95dvh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1139,7 +1139,11 @@ footer {
 
 @media (max-width: 768px) {
   .hero-text {
-    margin-top: 5%;
+    margin: 15% 7%;
+  }
+
+  .hero-image {
+    height: 100dvh;
   }
 
   .services-container {
