@@ -343,62 +343,64 @@
             </button>
           </div>
         </div>
-
-        <div class="testimonial-grid autoShow" id="reviews-container">
-          <div class="testimonial-card">
-            <div class="review-header">
-              <div class="review-user">
-                <div class="user-avatar">MA</div>
-                <div class="user-info">
-                  <h4>Mary Anne Daquiz Pollicar</h4>
-                  <span>via Facebook</span>
+        
+        <div id="reviews-wrapper">
+          <div class="testimonial-grid autoShow" id="reviews-container">
+            <div class="testimonial-card">
+              <div class="review-header">
+                <div class="review-user">
+                  <div class="user-avatar">MA</div>
+                  <div class="user-info">
+                    <h4>Mary Anne Daquiz Pollicar</h4>
+                    <span>via Facebook</span>
+                  </div>
                 </div>
+                <i class="fa-brands fa-facebook fb-icon"></i>
               </div>
-              <i class="fa-brands fa-facebook fb-icon"></i>
+              <div class="review-image-container">
+                <img
+                  src="./assets/images/Reviews/review1.png"
+                  alt="Review Screenshot 1"
+                />
+              </div>
             </div>
-            <div class="review-image-container">
-              <img
-                src="./assets/images/Reviews/review1.png"
-                alt="Review Screenshot 1"
-              />
-            </div>
-          </div>
 
-          <div class="testimonial-card">
-            <div class="review-header">
-              <div class="review-user">
-                <div class="user-avatar">LV</div>
-                <div class="user-info">
-                  <h4>Lucie Villaflor Francisco</h4>
-                  <span>via Facebook</span>
+            <div class="testimonial-card">
+              <div class="review-header">
+                <div class="review-user">
+                  <div class="user-avatar">LV</div>
+                  <div class="user-info">
+                    <h4>Lucie Villaflor Francisco</h4>
+                    <span>via Facebook</span>
+                  </div>
                 </div>
+                <i class="fa-brands fa-facebook fb-icon"></i>
               </div>
-              <i class="fa-brands fa-facebook fb-icon"></i>
+              <div class="review-image-container">
+                <img
+                  src="./assets/images/Reviews/review2.png"
+                  alt="Review Screenshot 2"
+                />
+              </div>
             </div>
-            <div class="review-image-container">
-              <img
-                src="./assets/images/Reviews/review2.png"
-                alt="Review Screenshot 2"
-              />
-            </div>
-          </div>
 
-          <div class="testimonial-card">
-            <div class="review-header">
-              <div class="review-user">
-                <div class="user-avatar">FP</div>
-                <div class="user-info">
-                  <h4>Flordelyn Pascual</h4>
-                  <span>via Facebook</span>
+            <div class="testimonial-card">
+              <div class="review-header">
+                <div class="review-user">
+                  <div class="user-avatar">FP</div>
+                  <div class="user-info">
+                    <h4>Flordelyn Pascual</h4>
+                    <span>via Facebook</span>
+                  </div>
                 </div>
+                <i class="fa-brands fa-facebook fb-icon"></i>
               </div>
-              <i class="fa-brands fa-facebook fb-icon"></i>
-            </div>
-            <div class="review-image-container">
-              <img
-                src="./assets/images/Reviews/review3.png"
-                alt="Review Screenshot 3"
-              />
+              <div class="review-image-container">
+                <img
+                  src="./assets/images/Reviews/review3.png"
+                  alt="Review Screenshot 3"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -409,7 +411,7 @@
           <span class="close-modal" onclick="closeReviewModal()">&times;</span>
           <h2>Write a Review</h2>
           <form id="reviewForm" onsubmit="submitReview(event)">
-            <div class="review-form-group">
+            <div class="re  view-form-group">
               <label for="reviewName">Your Name</label>
               <input
                 type="text"
@@ -417,6 +419,10 @@
                 required
                 placeholder="John Doe"
               />
+            </div>
+            <div class="review-form-group">
+             <label for="reviewEmail">Your Email</label>
+             <input type="email" id="reviewEmail" required placeholder="your@email.com" />
             </div>
             <div class="review-form-group">
               <label for="reviewRating">Rating</label>
