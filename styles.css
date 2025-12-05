@@ -1229,4 +1229,26 @@ footer {
   .footer-col {
     flex: 1 1 100%;
   }
+
+  .hero-image {
+    height: 100dvh;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .hero-button {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    align-items: center;
+  }
+
+  .hero-button .order-now-btn,
+  .hero-button .view-services-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 }
