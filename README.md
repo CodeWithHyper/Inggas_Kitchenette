@@ -25,6 +25,8 @@ To provide an online presence for Ingga's Kitchenette, highlight its specialized
 ## Deployment 
 - GitHub Repository: 
 https://github.com/CodeWithHyper/Inggas_Kitchenette
+- Live Site:
+https://codewithhyper.github.io/Inggas_Kitchenette/
 ## Lessons Learned 
 - Full Stack Integration: Successfully connected an HTML frontend to a PHP/MySQL backend.
 - Database Management: Learned to create tables and insert form data securely using Prepared Statements.
