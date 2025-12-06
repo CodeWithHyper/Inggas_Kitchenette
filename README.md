@@ -35,7 +35,8 @@ https://codewithhyper.github.io/Inggas_Kitchenette/
 - Third-Party Libraries: Implemented PHPMailer to solve the limitations of standard PHP mail functions.
 ## Timeline 
 | Phase | Task | Date | 
-| Proposal | Planning, wireframing & asset gathering | Oct 14, 2025 | 
-| Development | Coding & testing | Oct 15–Nov 20, 2025 | 
-| Deployment | GitHub setup & launch | Nov 21–24, 2025 | 
-| Submission | Final documentation | Nov 25, 2025 
+|---|---|---|
+| Proposal | Planning, wireframing & asset gathering | Oct 14 - 19, 2025 | 
+| Development | Coding & testing | Oct 20–Nov 30, 2025 | 
+| Deployment | GitHub setup & launch | Dec 1 - 11, 2025 | 
+| Submission | Final documentation | Dec 12, 2025 |
