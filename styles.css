@@ -1287,4 +1287,32 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  .modal-content {
+    width: 85%;
+    padding: 20px;
+    margin: 20% auto;
+  }
+
+  .review-form-group label {
+    font-size: 0.9rem;
+  }
+
+  .review-form-group {
+    margin-right: 0;
+  }
+
+  .review-form-group input,
+  .review-form-group textarea,
+  .review-form-group select {
+    width: 100%; 
+    padding: 12px; 
+    margin-right: 0; 
+    box-sizing: border-box; 
+    max-width: 100%; 
+  }
+
+  .modal-submit-btn {
+    padding: 12px;
+  }
 }
