@@ -134,6 +134,7 @@
           <!-- Card 1 -->
           <div
             class="services-card autoShow"
+            id="catering"
             onclick="selectService('catering_service')"
           >
             <img
@@ -166,7 +167,11 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="services-card autoShow" onclick="selectService('food_packs')">
+          <div
+            class="services-card autoShow"
+            id="food-pack"
+            onclick="selectService('food_packs')"
+          >
             <img src="./assets/images/food_pack.png" alt="Food Packs" />
             <div class="service-content">
               <h2>Food Packs</h2>
@@ -191,7 +196,11 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="services-card autoShow" onclick="selectService('party_trays')">
+          <div
+            class="services-card autoShow"
+            id="party-trays"
+            onclick="selectService('party_trays')"
+          >
             <img src="./assets/images/Image_6.jpg" alt="Party Trays" />
             <div class="service-content">
               <h2>Party Trays</h2>
@@ -219,7 +228,11 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="services-card autoShow" onclick="selectService('special_events')">
+          <div
+            class="services-card autoShow"
+            id="special-events"
+            onclick="selectService('special_events')"
+          >
             <img
               src="./assets/images/special_events.png"
               alt="Special Events"
@@ -343,7 +356,7 @@
             </button>
           </div>
         </div>
-        
+
         <div id="reviews-wrapper">
           <div class="testimonial-grid autoShow" id="reviews-container">
             <div class="testimonial-card">
@@ -421,8 +434,13 @@
               />
             </div>
             <div class="review-form-group">
-             <label for="reviewEmail">Your Email</label>
-             <input type="email" id="reviewEmail" required placeholder="your@email.com" />
+              <label for="reviewEmail">Your Email</label>
+              <input
+                type="email"
+                id="reviewEmail"
+                required
+                placeholder="your@email.com"
+              />
             </div>
             <div class="review-form-group">
               <label for="reviewRating">Rating</label>
@@ -693,10 +711,10 @@
         <div class="footer-col">
           <h3>Services</h3>
           <ul class="footer-links">
-            <li><a href="#">Catering Service</a></li>
-            <li><a href="#">Food Packs</a></li>
-            <li><a href="#">Party Trays</a></li>
-            <li><a href="#">Special Events</a></li>
+            <li><a href="#catering">Catering Service</a></li>
+            <li><a href="#food-pack">Food Packs</a></li>
+            <li><a href="#party-trays">Party Trays</a></li>
+            <li><a href="#special-events">Special Events</a></li>
           </ul>
         </div>
 
